@@ -1,8 +1,9 @@
 (function (exports) {
 
-  function Controller(peeps = Peeps, allPeepsView = AllPeepsView) {
+  function Controller(peeps = Peeps, allPeepsView = AllPeepsView, reigsterView = new RegisterView()) {
     this._peeps = new peeps();
     this._allPeepsView = new allPeepsView(this._peeps);
+    this._registerView = reigsterView;
   }
 
   Controller.prototype.fetchAllPeeps = function () {
@@ -21,7 +22,6 @@
         self._peeps.updatePeeps(allPeeps);
         self.createView();
       });
-
   }
 
   Controller.prototype.createView = function () {
@@ -29,6 +29,12 @@
 
     document.getElementById("mainBody").innerHTML = htmlString;
   }
+
+  Controller.prototype.createRegisterView = function () {
+    var htmlString = this._registerView.returnHTML();
+    document.getElementById("mainBody").innerHTML = htmlString;
+  }
+
 
   exports.Controller = Controller;
 })(this)

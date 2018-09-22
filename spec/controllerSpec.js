@@ -17,7 +17,6 @@ describe("Controller", function () {
 
   PeepsDouble.prototype.returnAll = function () {
     return this._allPeeps;
-
   }
 
   PeepsDouble.prototype.fetchAllPeeps = function () {
@@ -52,12 +51,25 @@ describe("Controller", function () {
     expect(controller._allPeepsView).toBeDefined();
   });
 
+  it("instantiates with an instance of RegisterView", function () {
+    expect(controller._registerView).toBeDefined();
+  });
+
   describe("createView", function () {
     it("updates the page with contents of html string", function () {
       controller.createView();
       var item = document.getElementById("mainBody");
 
       expect(item.innerHTML).toContain("my first peep :)");
+    });
+  });
+
+  describe("createRegisterView", function() {
+    it("updates the page with contents of the html string", function() {
+      controller.createRegisterView();
+      var item = document.getElementById("mainBody");
+
+      expect(item.innerHTML).toContain("Handle:");
     });
   });
 
