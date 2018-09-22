@@ -24,6 +24,10 @@ describe("Controller", function () {
     return "Fetched!"
   }
 
+  PeepsDouble.prototype.updatePeeps = function () {
+    return "Peeps updated"
+  }
+
 
   function AllPeepsViewDouble() {}
 
@@ -35,7 +39,7 @@ describe("Controller", function () {
   var controller;
 
   beforeEach(function () {
-    controller = new Controller(new PeepsDouble(), AllPeepsViewDouble);
+    controller = new Controller(PeepsDouble, AllPeepsViewDouble);
   });
 
 
@@ -57,9 +61,12 @@ describe("Controller", function () {
     });
   });
 
-  describe("refreshPeeps", function() {
-    it("fetches all peeps", function() {
-      expect(controller.refreshPeeps()).toEqual("Fetched!");
-    });
-  });
+  // describe("fetchAllPeeps", function () {
+  //   it("gets all of the peeps from the API", function () {
+
+  //     expect(controller.fetchAllPeeps()).toHaveBeenCalled();
+  //   });
+  // });
+
+
 });

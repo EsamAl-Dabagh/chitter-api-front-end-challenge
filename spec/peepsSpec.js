@@ -3,8 +3,8 @@ describe("Peeps", function () {
   var peeps;
 
   beforeEach(function () {
-    peeps = new Peeps();
-    var fetchDouble = [
+    peeps = new Peeps(somePeeps);
+    var somePeeps = [
       {
         "id": 34,
         "body": "my first peep :)",
@@ -17,22 +17,14 @@ describe("Peeps", function () {
         "likes": []
       }
     ];
-    spyOn(peeps, "fetchAllPeeps").and.returnValue(fetchDouble);
+    peeps = new Peeps(somePeeps);
   });
 
-  // describe("fetchAllPeeps", function () {
-  //   it("gets all of the peeps from the API", function () {
-      
-  //     expect(peeps.fetchAllPeeps()).toBeDefined();
-  //   });
-  // });
-
-  // describe("returnAll", function () {
-  //   it("returns all the previously fetched Peeps", function () {
-  //     peeps.fetchAllPeeps();
-  //     var allThePeeps = peeps.returnAll();
-  //     expect(allThePeeps.length).toBeGreaterThan(1);
-  //   });
-  // });
+  describe("returnAll", function () {
+    it("returns all the previously fetched Peeps", function () {
+      var allThePeeps = peeps.returnAll();
+      expect(allThePeeps.length).toEqual(1);
+    });
+  });
 
 });
