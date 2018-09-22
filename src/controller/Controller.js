@@ -8,7 +8,7 @@
   Controller.prototype.createView = function() {
     var htmlString = this._allPeepsView.returnHTML();
 
-    document.getElementsByClassName("mainBody").innerHTML = htmlString;
+    document.getElementById("mainBody").innerHTML = htmlString;
     // console.log(element);
 
     // element.innerHTML = htmlString;

@@ -51,7 +51,7 @@ describe("Controller", function() {
   describe("createView", function() {
     it("updates the page with contents of html string", function() {
       controller.createView();
-      var item = document.getElementsByClassName("mainBody");
+      var item = document.getElementById("mainBody");
 
       expect(item.innerHTML).toContain("my first peep :)");
     });
