@@ -20,19 +20,19 @@ describe("Peeps", function () {
     spyOn(peeps, "fetchAllPeeps").and.returnValue(fetchDouble);
   });
 
-  describe("fetchAllPeeps", function () {
-    it("gets all of the peeps from the API", function () {
+  // describe("fetchAllPeeps", function () {
+  //   it("gets all of the peeps from the API", function () {
       
-      expect(peeps.fetchAllPeeps()).toBeDefined();
-    });
-  });
+  //     expect(peeps.fetchAllPeeps()).toBeDefined();
+  //   });
+  // });
 
-  describe("returnAll", function () {
-    it("returns all the previously fetched Peeps", function () {
-      peeps.fetchAllPeeps();
-      var allThePeeps = peeps.returnAll();
-      expect(allThePeeps.length).toBeGreaterThan(1);
-    });
-  });
+  // describe("returnAll", function () {
+  //   it("returns all the previously fetched Peeps", function () {
+  //     peeps.fetchAllPeeps();
+  //     var allThePeeps = peeps.returnAll();
+  //     expect(allThePeeps.length).toBeGreaterThan(1);
+  //   });
+  // });
 
 });

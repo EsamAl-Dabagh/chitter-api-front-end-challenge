@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function(){
-  var controller = new Controller(); 
+// document.addEventListener("DOMContentLoaded", function(){
+//   var controller = new Controller(); 
 
-  controller.refreshPeeps();
-  controller.createView();
-})
+//   controller.refreshPeeps();
+//   controller.createView();
+// })
