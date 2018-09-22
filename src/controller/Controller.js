@@ -25,8 +25,6 @@
   }
 
   Controller.prototype.createView = function () {
-    // this._allPeepsView = new this._allPeepsView(this._peeps)
-
     var htmlString = this._allPeepsView.returnHTML();
 
     document.getElementById("mainBody").innerHTML = htmlString;
