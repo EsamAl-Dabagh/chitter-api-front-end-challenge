@@ -9,9 +9,7 @@
     var htmlString = this._allPeepsView.returnHTML();
 
     document.getElementById("mainBody").innerHTML = htmlString;
-    // console.log(element);
-
-    // element.innerHTML = htmlString;
+  
   }
 
   exports.Controller = Controller;

@@ -33,7 +33,7 @@ describe("allPeepsView", function() {
   describe("returnHTML", function() {
     it("returns a string of HTML", function() {
       expect(peepsView.returnHTML()).toEqual(
-        "<div class='peep'><p class='body'>my first peep :)</p><p class='author'>Posted by: ThisIsAName</p></div>"
+        "<div class='peep'><div class='eachPeep'><p class='body'>my first peep :)</p><p class='author'>Posted by: ThisIsAName</p></div></div>"
         );
     });
   });

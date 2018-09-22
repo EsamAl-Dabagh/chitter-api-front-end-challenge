@@ -9,7 +9,7 @@
     var htmlString = "<div class='peep'>"
 
     this._peeps.returnAll().forEach(function(peep) {
-      htmlString += `<p class='body'>${peep.body}</p><p class='author'>Posted by: ${peep.user.handle}</p>`
+      htmlString += `<div class='eachPeep'><p class='body'>${peep.body}</p><p class='author'>Posted by: ${peep.user.handle}</p></div>`
     });
 
     var joinedString = htmlString + "</div>"
