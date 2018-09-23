@@ -1,5 +1,64 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+#mainBody {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  width: 50%;
+  margin: 0 auto;
+}
+
+#mainBody p {
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4em;
+}
+
 .eachPeep {
   border: 1px solid rgb(24, 23, 23);
   margin-top: 1%;
   margin-bottom: 1%;
+  text-align: center;
+}
+
+.body {
+  font-size: 1.2em;
+}
+
+.author {
+  font-size: 0.8em;
+}
+
+nav a {
+  margin-right: 2%;
+}
+
+#registerForm label {
+  font-weight: bold;
+  display: block;
+}
+
+#registerForm {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#registerForm input {
+  width: 200px;
+  height: 20px;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+}
+
+#registerForm button {
+  width: 200px;
+  height: 20px;
 }
