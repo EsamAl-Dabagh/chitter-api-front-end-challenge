@@ -39,8 +39,8 @@ describe("Controller", function () {
 
   beforeEach(function () {
     controller = new Controller(PeepsDouble, AllPeepsViewDouble);
+    
   });
-
 
   // TESTS
   it("instantiates with an instance of the Peeps model", function () {
@@ -64,8 +64,8 @@ describe("Controller", function () {
     });
   });
 
-  describe("createRegisterView", function() {
-    it("updates the page with contents of the html string", function() {
+  describe("createRegisterView", function () {
+    it("updates the page with contents of the html string", function () {
       controller.createRegisterView();
       var item = document.getElementById("mainBody");
 
@@ -73,12 +73,12 @@ describe("Controller", function () {
     });
   });
 
-  // describe("fetchAllPeeps", function () {
-  //   it("gets all of the peeps from the API", function () {
-
-  //     expect(controller.fetchAllPeeps()).toHaveBeenCalled();
-  //   });
-  // });
-
+  // describe("createUser", function () {
+  //   it("sends post request to API", function () {
+  //     spyOn(controller, "createUser");
+  //     controller.createUser();
+  //     expect(controller.createUser()).toHaveBeenCalled();
+  //   })
+  // })
 
 });
