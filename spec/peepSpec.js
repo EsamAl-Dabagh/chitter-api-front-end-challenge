@@ -5,10 +5,9 @@ describe("Peep", function () {
   var body = "This is a peep";
   var author = "ThisIsAName";
   var authorID = 228;
-  var createdAt = "2018-09-21T17:40:13.661Z";
 
   beforeEach(function () {
-    peep = new Peep(id, body, author, authorID, createdAt);
+    peep = new Peep(id, body, author, authorID);
   });
 
   it("instantiates with an id", function () {
@@ -25,10 +24,6 @@ describe("Peep", function () {
   
   it("instantiates with an authorID", function () {
     expect(peep._authorID).toBeDefined();
-  });
-  
-  it("instantiates with a createdAt date", function () {
-    expect(peep._createdAt).toBeDefined();
   });
 
 });

@@ -16,6 +16,13 @@ So I can post my own peeps
 I want to be able to register
 ```
 
+## How to Run
+```
+git clone https://github.com/EsamAl-Dabagh/chitter-api-front-end-challenge.git
+cd chitter-api-front-end-challenge
+```
+Then open `index.html`
+
 ## Technologies
 
 JavaScript: Using the fetch API to make calls to the Chitter backend API. 
@@ -50,7 +57,7 @@ Test-Driven using Jasmine.
        |
        |
        |
-       |                                     +--------------+          
+       |                                     +--------------+        
        |                                     |              |
        |-----------------------------------> | RegisterView |
                                              |              |

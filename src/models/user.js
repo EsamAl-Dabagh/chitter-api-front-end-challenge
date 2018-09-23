@@ -1,6 +1,6 @@
 (function(exports) {
 
-  function User(id, handle){
+  function User(id, handle, sessionKey){
     this._id = id;
     this._handle = handle;
   }

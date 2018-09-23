@@ -53,6 +53,8 @@
       var userHandle = response.handle;
 
       new User(userID, userHandle);
+
+      console.log("User Created:", response);
     })
   }
 

@@ -37,8 +37,12 @@ body {
   font-size: 0.8em;
 }
 
+nav {
+  margin-left: 1%;
+}
+
 nav a {
-  margin-right: 2%;
+  margin-left: .5%;
 }
 
 #registerForm label {
